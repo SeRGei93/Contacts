@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import RealmSwift
 
-class FormVC: ViewController {
+class FormVC: UIViewController {
     
     @IBOutlet weak var nameFiled: UITextField!
     @IBOutlet weak var surNameField: UITextField!
@@ -20,7 +21,18 @@ class FormVC: ViewController {
     }
     
     @IBAction func saveAction(_ sender: Any) {
+        guard let name = self.nameFiled.text,
+         let surname = self.surNameField.text,
+         let age: Int = Int(self.ageField.text ?? "")
+        else {return}
         
+        let contact = ContactModel(n: name, s: surname, a: age)
+        let realm = try! Realm()
+        
+        try? realm.write({
+            realm.add(contact)
+        })
+        navigationController?.popViewController(animated: true)
     }
     
 
