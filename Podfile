@@ -6,5 +6,6 @@ target 'Contacts' do
   use_frameworks!
 
   # Pods for Contacts
+  pod 'RealmSwift'
 
 end
