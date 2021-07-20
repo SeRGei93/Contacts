@@ -32,6 +32,8 @@ class FormVC: UIViewController {
         try? realm.write({
             realm.add(contact)
         })
+        
+        
         navigationController?.popViewController(animated: true)
     }
     

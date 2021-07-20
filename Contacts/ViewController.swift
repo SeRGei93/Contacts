@@ -48,6 +48,34 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            let realm = try! Realm()
+            try? realm.write{
+                realm.delete(contacts[indexPath.row])
+            }
+            
+            loadValuesFromDb()
+        default:
+            break
+        }
+            
+    }
+    
+    func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+        guard let primary = indexPath?.row else {
+            return
+        }
+    }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
