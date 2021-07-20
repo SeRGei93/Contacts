@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		852987CC26A72BA100DDBF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852987CA26A72BA100DDBF2C /* Main.storyboard */; };
 		852987CE26A72BA200DDBF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852987CD26A72BA200DDBF2C /* Assets.xcassets */; };
 		852987D126A72BA200DDBF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852987CF26A72BA200DDBF2C /* LaunchScreen.storyboard */; };
+		8548C3EA26A7341E00C62E59 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548C3E926A7341E00C62E59 /* FormVC.swift */; };
 		E376D0A89046E32823CDE670 /* Pods_Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B84363AD184DBE2146C1B7 /* Pods_Contacts.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		852987CD26A72BA200DDBF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852987D026A72BA200DDBF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		852987D226A72BA200DDBF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8548C3E926A7341E00C62E59 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
 		E57B7A2224821D6C15199CC7 /* Pods-Contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.debug.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.debug.xcconfig"; sourceTree = "<group>"; };
 		F4B84363AD184DBE2146C1B7 /* Pods_Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F658054A8094923AD2117335 /* Pods-Contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.release.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				852987CD26A72BA200DDBF2C /* Assets.xcassets */,
 				852987CF26A72BA200DDBF2C /* LaunchScreen.storyboard */,
 				852987D226A72BA200DDBF2C /* Info.plist */,
+				8548C3E926A7341E00C62E59 /* FormVC.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				E57B7A2224821D6C15199CC7 /* Pods-Contacts.debug.xcconfig */,
 				F658054A8094923AD2117335 /* Pods-Contacts.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8548C3EA26A7341E00C62E59 /* FormVC.swift in Sources */,
 				852987C926A72BA100DDBF2C /* ViewController.swift in Sources */,
 				852987C526A72BA100DDBF2C /* AppDelegate.swift in Sources */,
 				852987C726A72BA100DDBF2C /* SceneDelegate.swift in Sources */,
