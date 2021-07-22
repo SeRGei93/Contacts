@@ -60,7 +60,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Click")
         
         guard let vc = showVC else {return}
